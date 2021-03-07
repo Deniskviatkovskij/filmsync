@@ -9,50 +9,82 @@
   <meta property="og:url" content="https://filmsync.com">
   <meta property="og:description" content="Watch streaming media with friends">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- JQUERT CDN-->
 
   <!--SHORTCUT ICON-->
-  <link rel="shortcut icon" href="logopagr.png" type="image/png">
+  <link rel="shortcut icon" href="assets/images/logopagr.png" type="image/png">
   
-  <!-- FONTS -->
+  <!-- FONTS AND ICONS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
   <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
   <!--BOOTSTRAP-->
   <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
-  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
       <!-- LINKS TO OTHER FILES-->
-   <link rel="stylesheet" href="assets/css/style.css">
-
+   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="assets/css/icons.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/media.css">
+   <script src="assets/js//jquery.js"></script>
+   <script src="assets/js//main.js"></script>
+   
     </head>
 <body>
 
- 
 
 <!--NAVBAR STARTS-->
     <aside class="sidebar">
-      <!--LOGO SU UZRASU STARTS-->
       <header>
-        <img class="logo" src="assets/images/Logobalttranscroped.png" width="100px"/>
+        <img class="logo" src="assets/images/Logobalttranscroped.png" width="100px"/> <!--LOGO SU UZRASU-->
         </header>
-<!--LOGO SU UZRASU ENDS-->
-      <nav class="nav">
-         
+      <nav class="nav">  
         <ul>
           <li class = "hvr-float"><a href="#" class="nav-item">Start session</a></li>
-          <li class = "hvr-float"><a href="join.html" class="nav-item">Join session</a></li>
-          <li class = "hvr-float"><a href="#" class="nav-item">Settings</a></li>
+          
+          <li class = "hvr-float search_icon"><a class="nav-item">Join session</a></li>
+          
+          <li class = "hvr-float"><a class="nav-item">Settings</a></li>
           <li class = "hvr-float"><a href="#" class="nav-item">Donate</a></li>
         </ul>
-        
       </nav>
     </aside>
     <!--NAVBAR ENDS-->
 
+
+<!--SOCIAL MEDIA ICONS STARTS-->
+<div class = "fadein">
+<div class="wrapper">
+  <div class="media">
+    <ul>
+      <a href="https://github.com/Deniskviatkovskij/filmsync" target="_blank"><li class="mediali hvr-grow"><i class="fa fa-github-square"></i></li></a>
+     <a href="https://discord.gg/PQRRMbjX" target="_blank"><li class="mediali hvr-grow"><i class="fab fa-discord"></i></li></a>
+      <li class="mediali hvr-grow"><i class="fab fa-facebook-square"></i></li>
+      <li class="mediali hvr-grow mail_icon"><i class="fa fa-envelope"></i></li>
+    </ul>
+  </div>
+</div>
+</div>
+<!--SOCIAL MEDIA ICONS ENDS-->
+
+
+           <!--DIDELE FOTKE STARTS-->
+           <div class = "fadein">
+           <div class="hero-outer">
+            <div class="hero-image-container" id="hero-container">
+              <img src="https://raw.githubusercontent.com/samuelmaddock/metastream/master/resources/screenshots/screenshot1.png" class="hero-image" />
+            </div>
+          </div>
+      </div>
+      
+      <!--DIDELE FOTKE ENDS-->
+
+
     <!--TEKSTAS PO APACIA STARTS-->
-  <div class = "fadein">
+  <div class = "fadein"> <!--FADE IN ANIMACIJA-->
         <div class="container">
             <div class = "rows">
             <div class="feature">
@@ -83,61 +115,72 @@
               </div>
               </div>
               </div>
+              </div>
+              </div>
 <!--TEKSTAS PO APACIA ENDS-->
 
-              <!--DIDELE FOTKE STARTS-->
-              <div class="hero-outer">
-      <div class="hero-image-container" id="hero-container">
-        <img src="https://raw.githubusercontent.com/samuelmaddock/metastream/master/resources/screenshots/screenshot1.png" class="hero-image" />
-        <!-- <img src="/images/landing/hero3.png" class="hero-image" /> -->
+
+
+<!--JOIN LOBBY SEKCIJA STARTS-->
+<div class = "paieska">
+<div class="search_screen">
+  <i class="close_icon fa fa-times hvr-bounce-in" onclick="document.getElementById('search_bar').value = ''"></i> <!--KAD ISTRINTU CONTENT IS SEARCH KAI UZDARAI LANGA-->
+  <input id="search_bar" type="text" name="" placeholder="Join an existing room" class="search_box">
+
+  <div class="resultContainer">
+    <div style="display: inline;">
+      
+      <div class="content-wrap">
+        <h3 class="find_session"><span>Find Session</span></h3>
+        <br/>
+        <p><span class="session_tekstas">Join the <b>#sessions</b> channel on the FIlmSync Discord community to find other <br> users' sessions. Click the Discord logo below to join.</span></p>
+        <a href="https://discord.gg/PQRRMbjX" target="_blank"><img class="discord" src = "assets/images/discord-color.svg"></a>
       </div>
     </div>
+    
+
 </div>
+<!--ISEJIMAS IS JOIN IS SONO-->
+  <div class="go_back go_back2 close_icon3" onclick="document.getElementById('search_bar').value = ''" >
+    <i class="fa fa-angle-double-left back_arrow" ></i>
 
-<!--DIDELE FOTKE ENDS-->
-
-
-<div class="wrapper">
-  <div class="media">
-    <ul>
-      <li class="mediali"><i class="fa fa-github-square"><a href="" class="kontaktai"></a></i></li>
-      <li class="mediali"><i class="fa fa-github"><a href="" class="kontaktai"></a></i></li>
-      <li class="mediali"><i class="fa fa-facebook-square"><a href="" class="kontaktai"></a></i></li>
-      <li class="mediali"><i class="fa fa-envelope"><a href="" class="kontaktai"></a></i></li>
-    </ul>
   </div>
-
 </div>
+</div>
+<!--JOIN LOBBY SEKCIJA ENDS-->
+
+<!--PASTO PUSLAPIO START-->
+<section class="pasto_puslapis">
+  <div class="mail_screen">
+    <i class="close_icon2 fa fa-times hvr-bounce-in"></i>
+    <div class="mailContainer">
+      <form action="">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName">
+      </div>
 
 
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+
+          <div class="form-group">
+            <label for="massage">Message</label>
+            <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Feel free to tell us about any bugs or possible improvements"></textarea>
+          </div>
+            <button type="submit" class="mail_button">Submit</button>
+        </form>
+        <div id="status" class="error">Success</div>
+          </div>
+          
+      </div>
+
+      </section>
+<!--PASTO PUSLAPIO END-->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script>
-      window.onload = function() {
-    document.body.className += " loaded";
-}
-    </script>
   </body>
 
   

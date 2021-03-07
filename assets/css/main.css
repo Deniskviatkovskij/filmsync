@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+
+    
+}
+
+html {
+  font-family: Arial;
+  background: #5e42a6;
+  z-index: 999;
+  background-image:url('/assets/images/inspiration-geometry.png');
+
+}
+
+
+/* LOGO DALIS STARTS */
+
+.logo {
+  padding-bottom: 3em;
+  z-index: 50;
+  width: 300px;
+  height: auto;
+  position: absolute;
+  left: 18%;
+  top: 10%;
+  
+ }
+
+
+
+img { /* RELEVANT IR KITIEMS IMG */
+  position: relative;
+    width: auto;
+    float: left;
+    height: 40vh;
+    z-index: 999;
+    padding: 2em 20px;
+  }
+
+/* LOGO DALIS ENDS */
+
+
+/* MELYNA DALIS SONE SU NAVBARU STARTS */
+.sidebar {
+  position: fixed;
+  width: 30%;
+  height: 100vh;
+  background: #312450;
+  font-size: 0.65em;
+  opacity: 0.8;
+  
+  
+}
+
+.nav {
+  position: relative;
+  margin: 0 15%;
+  top: 65%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  animation: slide-up 1.1s ease;
+}
+
+.nav ul {
+  list-style-type: none; /* KAD NEBUTU JUODU TASKELIU */
+}
+
+  /* PAGR. NAVBAR SETTINGSAI */
+  .nav-item {
+    color: rgba(#FFF, 0.35);
+    display: block;
+    border-style: solid;
+    border-radius: 30px;
+    width: 380px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-align: center;
+    list-style-type: none;
+    flex-direction: column;
+    padding: 1rem 2rem 1.15rem;
+  cursor: pointer;
+  animation: slide-up 1.1s ease;
+  }
+
+ /* kad visada baltas tekstas butu navbar */
+ .nav-item {
+  color: #fff;
+  text-decoration: none;
+}
+/* uzvedus pelyte orange spalva navbar */
+.nav-item:hover {
+    color: #f98673;
+}
+
+/* MELYNA DALIS SONE SU NAVBARU ENDS */
+
+
+.container {
+    
+    float:right; /* BE SITO PZDC BUNA KAZKODEL */
+  }
+
+
+
+/* icons virs orange teksto */
+.icon {
+    width:85px;
+    height: auto;
+    margin-left: 7em;
+    margin-bottom: -20px;
+    position: relative;
+   
+       
+}
+/* tekstas apacioje starts */
+.rows {
+    display: flex;
+    flex-direction: row; 
+    width: 80%;
+    top: 32em;
+    float: right;
+    position: relative;
+    column-gap: 8px;
+    
+}
+
+.feature {
+    
+    text-align: center;
+    line-height: 24px;
+    min-width: 31%;
+    
+}
+
+.feature h3 {
+    color: #f98673;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.feature p {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 16px;
+
+  }
+/* tekstas apacioje ends */
+
+/* pagr didele fotke is metastream */
+  .hero-image {
+      width: 750px;
+      height: auto;
+      display: flex;
+      float: right;
+      padding: 10px;
+      position: absolute;
+  top: 7%;
+  left: 38%;
+  margin-right: 50px;
+  margin-left: 50px;
+  }
+
+
+
+
+
+/* JOIN LOBBY SEKCIJA */
+ .search_screen {
+   position: fixed;
+   width: 100%;
+   height:0;
+   background-color: #5e42a6;
+   background-image: url('/assets/images//inspiration-geometry.png');
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   overflow: hidden;
+   transition: 0.3s linear 0.3s;
+   z-index: 9999;
+ }
+
+ 
+/* SEARCH LAUKAS */
+ .search_box {
+   width: 100%;
+   max-width: 600px;
+   background-color: transparent;
+   border: none;
+   outline: none;
+   color:  #f98673;
+   font-size: 50px;
+   border-bottom: 1px solid white;
+   text-align: center;
+   padding: 10px;
+ }
+
+ .search_box::placeholder {
+   color: #fff;
+ }
+
+ input:focus::placeholder {
+  color: transparent;
+}
+
+ .search_screen.active {
+   height: 100vh;
+   transition-delay: 0s;
+ }
+
+ .search_screen.active .search_box,
+ .search_screen.active .close_icon {
+   opacity: 1;
+   transition: 0.2 linear 0.4s;
+ }
+
+
+
+
+
+.resultContainer { /* TEKSTAS PO SEARCH LAUKU */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 62%;
+ 
+  
+  
+ 
+}
+
+.find_session { /* TEKSTAS PO SEARCH LAUKU */
+  color: white;
+  letter-spacing: 2px;
+  font-size: 28px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+
+}
+.session_tekstas { /* TEKSTAS PO SEARCH LAUKU */
+  color: white;
+  font-size: 18px;
+  margin-top: -10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  
+}
+.content-wrap p {
+  margin-top: -25px;
+}
+
+.content-wrap img {
+  filter: invert(1);
+  height: auto;
+  height: 40px;
+  position: absolute;
+  margin-top: 0px;
+  padding: 0;
+}
+
+.discord:hover { /* DISCORD SVG ICON */
+  filter: invert(73%) sepia(21%) saturate(3080%) hue-rotate(334deg) brightness(98%) contrast(99%);
+}
+
+.go_back { /* GRIZT IS SONO */
+ 
+  width: 20%;
+  display: flex;
+  height: 100%;
+  position: absolute;
+  left:0;
+  
+}
+.go_back:hover {
+  background-color: rgba(255,255,255, 0.05);
+  animation: status 4s ease forwards;
+  
+}
+
+.back_arrow {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 25%;
+  font-size: 180px;
+  opacity: 0;
+  color: #f98673;
+  
+  
+}
+
+.go_back:hover .back_arrow {
+  opacity: 0.85;
+  
+}
+
+
+/* JOIN LOBBY ENDS */
+
+/* EMAIL US SEKCIJA  */
+.mail_screen {
+  position: fixed;
+  float: right;
+  width: 70%;
+  height: 0;
+  background-color: #5e42a6;
+  background-image: url('/assets/images//inspiration-geometry.png');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left:30%;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 9999;
+}
+
+
+
+.mail_screen.active {
+  height: 100vh;
+  transition-delay: 0s;
+}
+.mail_screen.active .mailContainer,
+.mail_screen.active .close_icon2 {
+  opacity: 1;
+
+}
+
+
+.mailContainer {
+  width: 90%;
+  max-width: 500px;
+  margin:0 auto;
+  padding: 10px 20px;
+  box-shadow: 10px 10px 20px 10px #00000010;
+  background-color: #f98673;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  
+
+}
+
+.form-group { /* EMAIL LENTELE  */
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background-image: url('/assets/images//inspiration-geometry.png');
+  opacity: 0.8;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea{
+  resize: vertical;
+}
+
+.mail_button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  color: #f98673;
+  opacity: 0.8;
+  font-weight: bold;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  background-image: url('/assets/images//inspiration-geometry.png');
+}
+
+.mail_button:hover[type="submit"] {
+  opacity: 0.9;
+}
+.form-group input:hover,
+.form-group textarea:hover {
+  opacity: 0.9;
+}
+
+textarea::placeholder {
+  opacity: 0.7;
+}
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+#status {
+  text-align: center;
+ 
+  margin-bottom: 0px;
+  width: 100%;
+  max-width: 500px;
+  padding: 0px;
+  margin-top: 10px;
+  border-radius: 8px;
+
+}
+
+#status.success {
+  background-color: aquamarine;
+  color: white;
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(228, 57, 57);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+/* EMAIL US SEKCIJA  */
