@@ -69,6 +69,7 @@
     width: 200px;
   
   }
+}
 
   @media only screen and (max-height: 570px) {
     .logotipas {
@@ -176,6 +177,5 @@
       align-items: center;
     }
 
+}
   
-  }
-  }
