@@ -38,10 +38,29 @@
 
 <!--NAVBAR STARTS-->
     <aside class="sidebar">
+      <div class="logotipas">
+      <img class="logo" src="assets/images/Logobalttranscroped.png" width="100px"/> 
+      </div>
       <header>
-        <img class="logo" src="assets/images/Logobalttranscroped.png" width="100px"/> <!--LOGO SU UZRASU-->
-        </header>
+       
+        
+        <!--SOCIAL MEDIA ICONS STARTS-->
+
+  <!--SOCIAL MEDIA ICONS ENDS--><!--LOGO SU UZRASU-->
+        
       <nav class="nav">  
+        <div class = "fadein">
+          <div class="wrapper">
+            <div class="media">
+              <ul>
+                <a href="https://github.com/Deniskviatkovskij/filmsync" target="_blank"><li class="mediali hvr-grow"><i class="fa fa-github-square"></i></li></a>
+               <a href="https://discord.gg/PQRRMbjX" target="_blank"><li class="mediali hvr-grow"><i class="fab fa-discord"></i></li></a>
+                <li class="mediali hvr-grow"><i class="fab fa-facebook-square"></i></li>
+                <li class="mediali hvr-grow mail_icon"><i class="fa fa-envelope"></i></li>
+              </ul>
+            </div>
+          </div>
+          </div>
         <ul>
           <li class = "hvr-float"><a href="#" class="nav-item">Start session</a></li>
           
@@ -53,39 +72,21 @@
       </nav>
     </aside>
     <!--NAVBAR ENDS-->
+  </header>
 
 
-<!--SOCIAL MEDIA ICONS STARTS-->
-<div class = "fadein">
-<div class="wrapper">
-  <div class="media">
-    <ul>
-      <a href="https://github.com/Deniskviatkovskij/filmsync" target="_blank"><li class="mediali hvr-grow"><i class="fa fa-github-square"></i></li></a>
-     <a href="https://discord.gg/PQRRMbjX" target="_blank"><li class="mediali hvr-grow"><i class="fab fa-discord"></i></li></a>
-      <li class="mediali hvr-grow"><i class="fab fa-facebook-square"></i></li>
-      <li class="mediali hvr-grow mail_icon"><i class="fa fa-envelope"></i></li>
-    </ul>
-  </div>
-</div>
-</div>
-<!--SOCIAL MEDIA ICONS ENDS-->
+
+ 
 
 
+
+  <div class="container">
            <!--DIDELE FOTKE STARTS-->
-           <div class = "fadein">
-           <div class="hero-outer">
-            <div class="hero-image-container" id="hero-container">
-              <img src="https://raw.githubusercontent.com/samuelmaddock/metastream/master/resources/screenshots/screenshot1.png" class="hero-image" />
-            </div>
-          </div>
-      </div>
-      
+           
       <!--DIDELE FOTKE ENDS-->
-
-
     <!--TEKSTAS PO APACIA STARTS-->
   <div class = "fadein"> <!--FADE IN ANIMACIJA-->
-        <div class="container">
+        
             <div class = "rows">
             <div class="feature">
                 <div style="display:flex;flex-direction:column"> <!--KAD ICONS BUTU VIRS TEKSTO-->
@@ -117,6 +118,7 @@
               </div>
               </div>
               </div>
+              
 <!--TEKSTAS PO APACIA ENDS-->
 
 
@@ -154,29 +156,28 @@
   <div class="mail_screen">
     <i class="close_icon2 fa fa-times hvr-bounce-in"></i>
     <div class="mailContainer">
-      <form action="">
+      <form action="https://formspree.io/f/xgepgwyk" method="POST" id="my-form" >
       <div class="form-group">
         <label for="firstName">First Name</label>
-        <input type="text" id="firstName" name="firstName">
+        <input type="text" id="firstName" name="firstName" required>
       </div>
 
 
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" required>
           </div>
 
           <div class="form-group">
             <label for="massage">Message</label>
-            <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Feel free to tell us about any bugs or possible improvements"></textarea>
+            <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Feel free to tell us about any bugs or possible improvements" required></textarea>
           </div>
             <button type="submit" class="mail_button">Submit</button>
+            <div id="status" class="thanks"></div>
         </form>
-        <div id="status" class="error">Success</div>
-          </div>
-          
-      </div>
-
+        </div>
+        
+        </section>
       </section>
 <!--PASTO PUSLAPIO END-->
 

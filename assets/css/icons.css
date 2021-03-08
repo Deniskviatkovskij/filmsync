@@ -9,17 +9,29 @@
     border: 1px solid #fff;
     border-radius: 50%;
     transition: .5s;
+    margin-top: 60px;
+    margin-bottom: -2em;
+      align-items: center;
+      justify-content: center;
     }
     
     
     .media {
-      position: absolute;
-      top: 11%;
-      left: -20%;
-      transform: translate(100%, 120%);
-      z-index: 99;
+      width: 500px;
+      padding: 50px;
+      margin-top: 18em;
+      margin-bottom: 0px;
+      display: absolute;
       
     }
+
+    .sidebar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
    .mediali:hover {
      color: #f98673;
     border: 1px solid #f98673;

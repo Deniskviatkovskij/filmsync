@@ -14,6 +14,7 @@ html {
   background: #5e42a6;
   z-index: 999;
   background-image:url('/assets/images/inspiration-geometry.png');
+  overflow: hidden;
 
 }
 
@@ -26,17 +27,22 @@ html {
   width: 300px;
   height: auto;
   position: absolute;
-  left: 18%;
   top: 10%;
   
  }
-
+.logotipas {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  top: 10%;
+  width: 10%;
+}
 
 
 img { /* RELEVANT IR KITIEMS IMG */
-  position: relative;
+ 
     width: auto;
-    float: left;
     height: 40vh;
     z-index: 999;
     padding: 2em 20px;
@@ -47,12 +53,16 @@ img { /* RELEVANT IR KITIEMS IMG */
 
 /* MELYNA DALIS SONE SU NAVBARU STARTS */
 .sidebar {
-  position: fixed;
+  position: absolute;
+  min-width: 30%;
   width: 30%;
   height: 100vh;
   background: #312450;
   font-size: 0.65em;
-  opacity: 0.8;
+  opacity: 0.75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
   
 }
@@ -60,8 +70,11 @@ img { /* RELEVANT IR KITIEMS IMG */
 .nav {
   position: relative;
   margin: 0 15%;
-  top: 65%;
-  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  transform: translateY(-5%);
   font-weight: bold;
   animation: slide-up 1.1s ease;
 }
@@ -85,6 +98,7 @@ img { /* RELEVANT IR KITIEMS IMG */
     padding: 1rem 2rem 1.15rem;
   cursor: pointer;
   animation: slide-up 1.1s ease;
+  margin-left: 35px;
   }
 
  /* kad visada baltas tekstas butu navbar */
@@ -100,20 +114,11 @@ img { /* RELEVANT IR KITIEMS IMG */
 /* MELYNA DALIS SONE SU NAVBARU ENDS */
 
 
-.container {
-    
-    float:right; /* BE SITO PZDC BUNA KAZKODEL */
-  }
-
-
-
 /* icons virs orange teksto */
 .icon {
     width:85px;
     height: auto;
-    margin-left: 7em;
-    margin-bottom: -20px;
-    position: relative;
+    margin-left: 35%;
    
        
 }
@@ -122,18 +127,20 @@ img { /* RELEVANT IR KITIEMS IMG */
     display: flex;
     flex-direction: row; 
     width: 80%;
-    top: 32em;
-    float: right;
-    position: relative;
+    max-width: 80%;   
     column-gap: 8px;
-    
+    margin-left: 5%;
+  
 }
+
+
 
 .feature {
     
     text-align: center;
     line-height: 24px;
-    min-width: 31%;
+    min-width: 37%;
+ 
     
 }
 
@@ -149,22 +156,22 @@ img { /* RELEVANT IR KITIEMS IMG */
     font-size: 16px;
 
   }
+
+  .container {
+   
+    position: absolute;
+    left: 30%;
+    top: 64%;
+    max-width: 70%;
+   
+
+   
+  }
+
+  
 /* tekstas apacioje ends */
 
 /* pagr didele fotke is metastream */
-  .hero-image {
-      width: 750px;
-      height: auto;
-      display: flex;
-      float: right;
-      padding: 10px;
-      position: absolute;
-  top: 7%;
-  left: 38%;
-  margin-right: 50px;
-  margin-left: 50px;
-  }
-
 
 
 
@@ -414,7 +421,7 @@ textarea:focus::placeholder {
   max-width: 500px;
   padding: 0px;
   margin-top: 10px;
-  border-radius: 8px;
+  
 
 }
 
