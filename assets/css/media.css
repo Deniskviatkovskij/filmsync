@@ -32,3 +32,12 @@
     }
 
 }
+@media screen and (max-height: 735px) {
+    .feature h3 {
+        color: #f98673;
+        margin-bottom: 10px;
+        margin-top: -10px;
+        font-size: 22px;
+    }
+    
+}
