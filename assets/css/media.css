@@ -1,4 +1,4 @@
-@media screen and (max-width: 1277px) {
+@media screen and (max-width: 1340px) {
     .logo {
         width: 250px;
     }
@@ -19,6 +19,9 @@
             padding: 1rem 2rem 1.15rem;
           margin-left: 4.1em;
           } 
+          .container {
+              top:11%;
+          }
 }
 @media screen and (max-height: 715px) {
     .container {
